@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <div>
+        <p>Student Name: <span id="student_name"> </span></p>
+        <p>Student address: <span id="student_address"> </span></p>
+        <p>Total Marks: <span id="total"> </span></p>
+        <p>Percentage: <span id="percentage"> </span></p>
+    </div>
+    <script>
+         function student(){
+        var student_name ='Thirupathi';
+        var student_address = 'Krishnagiri';
+        var m1=parseFloat(prompt('Enter M1 Mark'));
+        var m2=parseFloat(prompt('Enter M2 Mark'));
+        var m3=parseFloat(prompt('Enter M3 Mark'));
+        var m4=parseFloat(prompt('Enter M4 Mark'));
+        var m5=parseFloat(prompt('Enter M5 Mark'));
+        var total = m1+m2+m3+m4+m5;
+        var percentage = (total/500)*100;
+        document.getElementById('student_name').innerHTML=student_name;
+        document.getElementById('student_address').innerHTML=student_address;
+        document.getElementById('total').innerHTML=total;
+        document.getElementById('percentage').innerHTML=percentage;
+        // console.log("Student total marks :"+total);
+
+        // console.log("student informaiton : "+student_name , student_address);
+
+        // console.log("Percentage :"+(total/500)*100);
+
+    }student()
+    </script>
+   
+   
+</body>
+</html>
